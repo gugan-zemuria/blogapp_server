@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: blog-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SUPABASE_API_URL
+        fromDatabase:
+          name: supabase-url
+          property: connectionString
+      - key: SUPABASE_API_KEY
+        fromDatabase:
+          name: supabase-key
+          property: connectionString
