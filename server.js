@@ -38,8 +38,10 @@ app.use(
     cookie: {
       secure: process.env.NODE_ENV === "production",
       httpOnly: true,
-      maxAge: 24 * 60 * 60 * 1000,
+      maxAge: 5 * 60 * 1000, // 5 minutes - just for OAuth flow
     },
+    // Use memory store only for OAuth flow, not for persistent sessions
+    name: 'oauth.session',
   })
 );
 

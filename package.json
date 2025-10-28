@@ -8,7 +8,7 @@
   "main": "index.js",
   "keywords": ["api", "posts", "supabase", "express", "rest"],
   "engines": {
-    "node": ">=16.0.0"
+    "node": "18.x"
   },
   "scripts": {
     "start": "node index.js",
