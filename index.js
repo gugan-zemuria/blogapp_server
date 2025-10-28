@@ -5,4 +5,4 @@
  * @version 1.0.0
  * @since 2024
  */
-require('./server.js');
+import './server.js';

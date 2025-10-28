@@ -11,7 +11,7 @@
     "node": ">=16.0.0"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "devStart": "nodemon server.js",
     "test": "jest",
     "test:watch": "jest --watch",
